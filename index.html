@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Gerald-Ramos</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Online Distant Learning Survey Form</h1>
+    <p id="description" class="description text-center">
+      This will Help us to to improve the platform of ODL
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="comment-label" for="comment">Id Number</label>
+      <input
+        type="comment"
+        name="number"
+        id="comment"
+        class="form-control"
+        placeholder="Id Number"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Please select your indicated course</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Choose Course</option>
+        <option value="student">Bachelor Science of Information Technology</option>
+        <option value="job">Bachelor Science of Computer Science</option>
+        <option value="learner">Bachelor Science of Architecture </option>
+        <option value="preferNo">Bachelor Science of Business Administration</option>
+        <option value="other">Bachelor Science of Accountancy</option>
+      </select>
+    </div>
+
+     <div class="form-group">
+      <label id="Major-label" for="Major">Please Input Indicated Course Major</label>
+      <input
+        type="text"
+        name="name"
+        id="Major"
+        class="form-control"
+        placeholder="Course Major"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Does Online Distant Learning Helps you with your studies?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Agree"
+          type="radio"
+          class="input-radio"
+          checked
+        />Agree</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Moderate"
+          type="radio"
+          class="input-radio"
+        />Moderate</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Disagree"
+          type="radio"
+          class="input-radio"
+        />Disagree</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What Region are you Located here in the Philippines?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Region I">Region I</option>
+        <option value="Region II">Region II</option>
+        <option value="Region III">Region III</option>
+        <option value="CAR">CAR</option>
+        <option value="Region IV A">Region IV A</option>
+        <option value="Region IV B">Region IV B</option>
+        <option value="Region V">Region V</option>
+        <option value="Region VI">Region VI</option>
+        <option value="Region VII">Region VII</option>
+        <option value="Region VIII">Region VIII</option>
+        <option value="Region IX">Region IX</option>
+        <option value="Region X">Region X</option>
+        <option value="Region XI">Region XI</option>
+        <option value="Region XII">Region XII</option>
+        <option value="Region XIII">Region XIII</option>
+        <option value="Region CAR(Cordillera Administrative Region">Region CAR(Cordillera Administrative Region</option>
+        <option value="Region BARMM">Region BARMM</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Please Choose among from the Options that Applies you
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Fast-Internet"
+          type="checkbox"
+          class="input-checkbox"
+        />Fast Internet</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Slow-Internet"
+          type="checkbox"
+          class="input-checkbox"
+        />Slow Internet</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Smartphone"
+          type="checkbox"
+          class="input-checkbox"
+        />Smartphone</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Desktop/Laptop"
+          type="checkbox"
+          class="input-checkbox"
+        />Desktop/Laptop</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Data"
+          type="checkbox"
+          class="input-checkbox"
+        />Data</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="WiFi"
+          type="checkbox"
+          class="input-checkbox"
+        />WiFi</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or state your concerns</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
